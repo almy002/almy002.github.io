@@ -1,0 +1,675 @@
+*
+{
+	box-sizing: border-box;
+	
+	-webkit-box-sizing: inherit;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+{
+	word-break: break-word;
+}
+*/
+
+body
+{
+	-webkit-font-feature-settings: "kern","liga","pnum";
+	font-feature-settings: "kern","liga","pnum";
+	font-style: normal;
+	font-weight: 400;
+  
+	background-color: #F2F2F2;
+	font-family: Chivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+	margin: 0;
+	line-height: 1.6;
+}
+
+.pageSETE
+{
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: #FFFEFC;
+	
+	display: grid;
+	grid-template-areas:
+	'header'
+	'main'
+	'footer';
+	gap: 10px;
+}
+
+.desktopHeader, .mobileHeader, /*.titleSETE-MOBILE, .titleSETE-textMobile,*/ .tabsSETE, .schedule
+{
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+/* -- DESKTOP HEADER -- */
+
+.header
+{
+	text-align: center;
+	grid-area: header;
+	
+	background-color: #1F377F;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.imgSETE, .imgSETE-Mobile
+{
+	background-color: #FFFEFC;
+}
+
+.logoSETE
+{
+	width: 20%;
+	margin: 1% 1% 0 3%;
+}
+
+.titleSETE
+{
+	background-color: #FFFEFC;
+}
+
+.titleSETE-text
+{
+	color: #FFFEFC;
+	background-color: #F48265;
+	
+	border-bottom: 2px solid;
+	border-color: #F48265;
+}
+
+.edition
+{
+	border-bottom: 2px solid;
+	border-color: #F48265;
+	
+	color: #FFCF4A;
+	margin: -1% 0% 2% 0%;
+}
+
+.themeSETE
+{
+	color: #FF0099;
+	margin: -2% 0% -6% 0%;
+}
+
+.menuSETE
+{
+	width: 80%;
+	margin: 0 3% 0 1%;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.seteTab
+{
+	width: 25%;
+	margin: 5% 2% 0 2%;
+	background-color: #FFFEFC;
+}
+
+.seteTab a:hover
+{
+	background-color: #F48265;
+	color: #FFFEFC;
+}
+
+.seteTab a:active
+{
+	background-color: #F2F2F2;
+}
+
+/* -- -- */
+
+
+
+/* -- MOBILE HEADER -- */
+
+/*
+.titleSETE-MOBILE
+{
+	width: 66%;
+}
+
+.SETE-Mobile
+{
+	width: 50%;
+}
+
+.themeSETE-Mobile
+{
+	width: 50%;
+}
+
+.titleSETE-textMobile, .SETE-Mobile, .themeSETE-Mobile
+{
+	font-size: 4vw;
+}
+
+/* .tabsSETE-Mobile*//*.titleSETE-MOBILE, .titleSETE-textMobile
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.siteMobile
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.titleSETE-textMobile
+{
+	width: 25%;
+}
+
+.logoSETE-Mobile
+{
+	margin: 1% 0 0 1%;
+	width: 25%;
+}
+*/
+.mobileHeader
+{
+	display: flex;
+	flex-direction: row;
+	
+	font-size: 3vw;
+}
+
+.siteMobile
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.titleSETE-Mobile
+{
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+}
+
+.logoSETE-Mobile
+{
+	width: 100%;
+	
+	margin: 2% 2% 0 2%;
+}
+
+
+.titleSETE-textMobile
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
+
+.SETE-Mobile
+{
+	color: #F48265;
+	font-size: 3vw;
+	margin: 6% -64% 0% 4%;
+	background-color: #FFFEFC;
+	padding: 0;
+}
+
+.edition-Mobile
+{
+	background-color: #FFCF4A;
+	padding: 0;
+	margin: 20% -64% 0 32%;
+	width: 100%;
+}
+
+.themeSETE-Mobile
+{
+	width: 100%;
+	margin: 1% 0 2% 0;
+	padding: 1% 20% 1% 0;
+	
+	background-color: #FFFEFC;
+	color: #FF0099;
+	
+	display: block;
+	text-align: right;
+}
+
+.topNav
+{
+	overflow: hidden;
+	position: relative;
+	
+	width: 20%
+}
+
+#mobileTabs
+{
+	display: none;
+	position: fixed;
+	margin: 16% 0 0 0;
+}
+
+.icon
+{
+	width: 100%;
+	margin-top: 5%;
+}
+
+.topNav a
+{
+	padding: 20% 100% 20% 0;
+	text-decoration: none;
+	font-size: 3vw;
+	display: block;
+	
+	background-color: #F2F2F2;
+	border: 2px solid;
+	border-color: #F2F2F2;
+	color: #1F377F;
+}
+
+.topNav a.icon
+{
+	display: block;
+	position: absolute;
+	background-color: #1F377F;
+	border-color: #1F377F;
+	color: #FFFEFC;
+}
+
+.topNav a:hover
+{
+	background-color: #DDDDDD;
+	color: #1F377F;
+	
+}
+
+.topNav a:active
+{
+	background-color: #F48265;
+}
+
+.tabsSETE-Mobile
+{
+	width: 80%
+}
+
+.mobileMenu-Content
+{
+	width: 20%;
+	display: overflow;
+}
+
+/* -- -- */
+
+
+
+/* -- MAIN PAGE -- */
+
+.main
+{
+	grid-area: main;
+}
+
+.intervenantsNoms
+{
+	border-right: 2px solid;
+	border-color: ##F48265;
+	color: #FFFEFC;
+	background-color: #F48265;
+	
+	margin: 5% 10% 5% 15%
+}
+
+.intervenantsEmail
+{
+	margin: 2% 0% 0% -3%;
+	border-right: 2px solid;
+	border-color: #F0F0F0;
+	
+}
+
+.intervenantsProfession
+{
+	margin: 0% 0% 15% 15%;
+}
+
+/*#programLead, */.sessionJumelles, .sessionTriple/*, .sessionQuadruple*/
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.pdfProgram
+{
+	text-align: center;
+	background-color: #F48265;
+	display: flex;
+}
+
+/*.date, .pdfProgram
+{
+	width: 25%;
+}
+
+.padding
+{
+	width: 50%;
+}*/
+
+
+.uniqueSchedule
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.sessionQuadruple
+{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.communicationsOrales
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+
+
+/* Taken from a previous version, Needs polishing */
+
+.menuProgramme-nav
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.menuProgramme a
+{
+	width: 100%;
+	display: block;
+	
+	margin: 0;
+	padding: 0;
+	
+	background-color: #FFCF4A;
+	color: #F2F2F2;
+	
+	
+	text-decoration: none;
+}
+
+.menuProgramme a:hover
+{
+	background-color: #F48265;
+	border-color: #1F377F;
+	color: #1F377F;
+}
+
+.menuProgramme a:active
+{
+	background-color: #1F377F;
+	border-color: #1F377F;
+	color: #1F377F;
+}
+
+.pageProgramme
+{
+	padding: 0;
+}
+
+.date
+{
+	font-size: 16px;
+	line-height: 1.8em;
+	margin-bottom: 1%;
+	color: #1F377F;
+	position: relative;
+	display: inline-block;
+}
+
+.date:after
+{
+	content: ''; /*Create the line under the date*/
+	display: block;
+	max-width: 80%;
+	height: 4px;
+	background: #FFCF4A;
+	margin-top: 2%;
+}
+
+.conventionDate
+{
+	background: #FFCF4A;
+	text-transform: uppercase;
+
+	border: 2px solid;
+	border-color: #FFCF4A;
+
+	margin: 0 0 5%;
+	max-width: 100%;
+
+	text-align: center;
+}
+
+.horaires
+{
+	color: #F48265;
+	border-color: #F48265;
+	border-right: 2px solid;
+	
+	padding: 0.5%;
+	width: 10%;
+	
+
+	text-align:center;
+}
+
+.session
+{
+	width: 90%;
+	
+	background-color: #F2F2F2;
+}
+
+.session, .jumeau, .triple, .quadruple
+{
+	text-align: center;
+
+	margin: 1%;
+}
+
+.titreSujet
+{
+	/*border-bottom: 2px solid;
+	border-color: #1F377F;*/
+	background-color: #FFCF4A;
+	
+	color: #1F377F;
+}
+
+.jumeau
+{
+	width: 50%;
+	margin: 0% 6% 0% 0%;
+}
+
+.triple
+{
+	width: 33%
+}
+
+.quadruple
+{
+	width: 25%
+}
+
+.intervenants
+{
+	line-height: 1.5em;
+	position: relative;
+	margin: 0px 10px 10px 0px;
+	padding: 2px;
+}
+
+/* -- -- */
+
+
+/* -- FOOTER -- */
+
+footer
+{
+	padding: 1%;
+	background-color: #1F377F;
+	margin: 0.5% 0 0 0;
+}
+
+.footer
+{
+	text-align: center;
+	grid-area: footer;
+}
+
+/* -- -- */
+
+
+
+/* -- MEDIA QUERIES -- */
+
+@media (max-width: 600px)
+{
+	.header {grid-area: 1 / span 6;}
+	.main {grid-area: 2 / span 4;}
+	.footer {grid-area: 3 / span 6;}
+}
+
+
+
+@media (min-width: 600px)
+{
+	.header {grid-area: 1 / span 6;}
+	.main {grid-area: 2 / span 4;}
+	.footer {grid-area: 3 / span 6;}
+}
+
+
+
+@media (min-width: 768px)
+{
+	.header {grid-area: 1 / span 6;}
+	.main {grid-area: 2 / span 4;}
+	.footer {grid-area: 3 / span 6;}
+}
+
+
+
+/*Dynamic Headers*/
+
+@media screen and (min-width: 768px)
+{
+	.mobileHeader {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	.main {
+		font-size: 3vw;
+	}
+	
+	.orale {
+		font-size: 2vw;
+	}
+	
+	.conventionDate {
+		font-size: 3.5vw;
+		border: 1px solid;
+		border-color: #FFCF4A;
+	}
+	
+	.desktopHeader {
+		display: none;
+	}
+	
+	.logoSETE {
+		width: 30%;
+		margin: 0 2% 0 1%;
+	}
+	
+	.titleSETE {
+		width: 60%;
+		margin: 0 0 0 0;
+	}
+	
+	/*.icon {
+		width: 10%;
+		margin: 0 1% 0 2%;
+	}*/
+	
+	.horaires {
+		width: 10%;
+	}
+	
+	.session {
+		width: 90%;
+	}
+	
+}
+
+/**/
+
+
+
+@media (min-width: 992px)
+{
+	.header {grid-area: 1 / span 6;}
+	.main {grid-area: 2 / span 4;}
+	.footer {grid-area: 3 / span 6;}
+}
+
+
+
+@media (min-width: 1024px)
+{
+	.header {position: relative; z-index: 1000; grid-area: 1 / span 6;}
+	.main {grid-area: 2 / span 4;}
+	.footer {grid-area: 3 / span 6;}
+}
+
+
+
+@media (min-width: 1200px)
+{
+	.header {position: relative; z-index: 1000; grid-area: 1 / span 6;}
+	.main {grid-area: 2 / span 4;}
+	.footer {grid-area: 3 / span 6;}
+}
