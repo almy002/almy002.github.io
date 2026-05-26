@@ -1,0 +1,2753 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="seteTemplate.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<title>Programme Congrès SETE 2026</title>
+	</head>
+	
+	<body>
+		<div class="pageSETE">
+	
+			<div class="headerOutter">
+				<header class="header">
+					<div class="headerInner">
+					
+						<div class="dynamicHeader">
+						
+							<div class="desktopHeader">
+				
+								<div class="logoSETE">
+									<img class="imgSETE" src="images/LogoSETE26V4.png" alt="Logo de la SETE" />
+								</div>
+					
+								<div class="menuSETE">
+								
+									<div class="titleSETE">
+										<p class="titleSETE-text">
+											<b>
+												Société d'Éducation Thérapeutique Européenne
+											</b>
+											
+											<p class="edition">
+												- - 11e Édition - -
+											</p>
+											
+											<div class="themeSETE">
+												<b>
+													Les savoirs en ETP dans toutes leurs dynamiques
+												</b>
+											</div>
+										</p>
+									</div>
+									
+									<ul class="tabsSETE">
+										
+										<li class="seteTab">
+											<a href="pdfs/plan.pdf">
+												Plan
+											</a>
+										</li>
+											
+										<li class="seteTab" onclick="openTab('Intervenants')">
+											<a href="#feat">
+												Intervenants
+											</a>
+										</li>
+											
+										<li class="seteTab" onclick="openTab('Programme')">
+											<a href="#schedule">
+												Programme
+											</a>
+										</li>
+											
+										<li class="seteTab" onclick="openTab('Quiz')">
+											<a href="#quiz">
+												Quiz
+											</a>
+										</li>
+										
+									</ul>
+								</div>
+						
+							</div>
+							
+							<!-- Mobile Header -->
+							
+							<div class="mobileHeader">
+							
+							
+								<div class="siteMobile">
+								
+									<div class="titleSETE-Mobile">
+								
+										<div class="logoSETE-Mobile">
+											<img class="imgSETE-Mobile" src="images/LogoSETE26V4.png" alt="Logo de la SETE" />
+										</div>
+
+										<div class="titleSETE-textMobile">
+											<b class="SETE-Mobile">
+												Société d'Éducation Thérapeutique Européenne
+											</b>
+											<p class="edition-Mobile">
+												- - 11e Édition - -
+											</p>
+										</div>
+									
+									</div>
+								
+									<div class="themeSETE-Mobile">
+										<b>
+										Les savoirs en ETP dans toutes leurs dynamiques
+										</b>
+									</div>
+								
+								</div>
+				
+								
+								
+								<div class="topNav">
+								
+								
+									
+									<a href="javascript:void(0);" class="icon" onclick="openTabMobile()">
+										<i class="fa fa-bars">
+										</i>
+									</a>
+									
+									<ul id="mobileTabs" class="tabsSETE-Mobile">
+
+										<li class="mobileMenu-Content">
+											<a href="pdfs/plan.pdf">
+												Plan
+											</a>
+										</li>
+										
+										<li class="mobileMenu-Content" onclick="openTab('Intervenants')">
+											<a href="#feat">
+												Intervenants
+											</a>
+										</li>
+										
+										<li class="mobileMenu-Content" onclick="openTab('Programme')">
+											<a href="#schedule" class="active">
+												Programme
+											</a>
+										</li>
+										
+										<li class="mobileMenu-Content" onclick="openTab('Quiz')">
+											<a href="#quiz">
+												Quiz
+											</a>
+										</li>
+									
+										
+									</ul>
+									
+									
+								</div>
+								
+								
+									
+									
+								
+						
+							</div> 
+							
+							<!--  -->
+						</div>
+					</div>
+				</header>
+			</div>
+		
+			<div class="mainOutter">
+				<div class="main">
+					<div class="mainInner">
+						<!-- Intervenants -->
+						<div id="Intervenants" class="tab" style="display: none">
+						
+						<!-- Note: Inconsistence concernant la position des noms -->
+							<!--<table>
+							
+							<tr>
+								<th>
+									Carole Planes
+								</th>
+								
+								<td>
+									carole.planes@aphp.fr
+								</td>
+								
+								<td>
+									Directrice UFR SMBH
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Anna Baleige
+								</th>
+								
+								<td>
+									baleige.a@gmail.com
+								</td>
+								
+								<td>
+									Médecin psychiatre, sexologue, docteur en santé publique, Doctorante LEPS UR3412, Chaire Engagement des Patients
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Bourdon Olivier
+								</th>
+								
+								<td>
+									olivier.bourdon@aphp.fr
+								</td>
+								
+								<td>
+									PU-PH Pharmacie AP-HP
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Helen Bihan
+								</th>
+								
+								<td>
+									helene.bihan@aphp.fr
+								</td>
+								
+								<td>
+									PU-PH Endocrinologie AP-HP
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Las Vergnas Olivier
+								</th>
+								
+								<td>
+									olivier.lasvergnas@parisnanterre.fr
+								</td>
+								
+								<td>
+									<ul>
+										<li>
+											Prof émérite ApForD-Cref Université Paris Nanterre
+										</li>
+									
+										<li>
+											Associé Trigone-Cirel Université de LIlle 
+										</li>
+									
+										<li>
+											Animateur Communauté CoReS
+										</li>
+									</ul>
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Sébastien Colson
+								</th>
+								
+								<td>
+									sebastien.colson@univ-amu.fr
+								</td>
+								
+								<td>
+									Professeur des Universités en Sciences Infirmières, Directeur de l'Ecole des sciences infirmières, UR3279-CEReSS, Faculté SMPM, Aix-Marseille Université Président de la section 92 sciences infirmières du CNU
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Antonacci Tomaso
+								</th>
+								
+								<td>
+									tomaso.antonacci@gmail.com
+								</td>
+								
+								<td>
+								
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Grandjean Nathalie
+								</th>
+								
+								<td>
+									nathalie.grandjean@uclouvain.be
+								</td>
+								
+								<td>
+									Dr. Nathalie Grandjean,  UCLouvain, Belgique
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Cohen Jean David
+								</th>
+								
+								<td>
+									jd-cohen@chu-montpellier.fr
+								</td>
+								
+								<td>
+								Rhumatologue au CHU de Montpellier :SETE
+								</td>
+							</tr>
+							
+							<tr>
+								<th>
+									Olivia Gross
+								</th>
+								
+								<td>
+									olivia.gross@univ-paris13.fr
+								</td>
+								
+								<td>
+									MCF-HDR 70e directrice adjointe LEPS
+								</td>
+							</tr>
+							
+							</table>-->
+							
+							<div class="communicationsOrales">
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Carole Planes
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									carole.planes@aphp.fr
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+									Directrice UFR SMBH
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Anna Baleige
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									baleige.a@gmail.com
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+									Médecin psychiatre, sexologue, docteur en santé publique, Doctorante LEPS UR3412, Chaire Engagement des Patients
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Olivier Bourdon
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									olivier.bourdon@aphp.fr
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+									PU-PH Pharmacie AP-HP
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Helen Bihan
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									helene.bihan@aphp.fr
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+									PU-PH Endocrinologie AP-HP
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Olivier Las Vergnas
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									olivier.lasvergnas@parisnanterre.fr
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+									<ul>
+										<li>
+											Prof émérite ApForD-Cref Université Paris Nanterre
+										</li>
+									
+										<li>
+											Associé Trigone-Cirel Université de LIlle 
+										</li>
+									
+										<li>
+											Animateur Communauté CoReS
+										</li>
+									</ul>
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Sébastien Colson
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									sebastien.colson@univ-amu.fr
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+									Professeur des Universités en Sciences Infirmières, Directeur de l'Ecole des sciences infirmières, UR3279-CEReSS, Faculté SMPM, Aix-Marseille Université Président de la section 92 sciences infirmières du CNU
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Antonacci Tomaso
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									tomaso.antonacci@gmail.com
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+								
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Nathalie Grandjean
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									nathalie.grandjean@uclouvain.be
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+									Dr. Nathalie Grandjean,  UCLouvain, Belgique
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Jean David Cohen
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									jd-cohen@chu-montpellier.fr
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+								Rhumatologue au CHU de Montpellier :SETE
+								</div>
+							</span>
+							
+							<span class="orale">
+								<div class="intervenantsNoms">
+									Olivia Gross
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsEmail">
+									olivia.gross@univ-paris13.fr
+								</div>
+							</span>
+								
+							<span class="orale">
+								<div class="intervenantsProfession">
+									MCF-HDR 70e directrice adjointe LEPS
+								</div>
+							</span>
+							
+							</div>
+						
+						</div>
+				
+						<!-- PROGRAMME -->
+						<div id="Programme" class="tab">
+						
+							<div class="programmeHeader">
+						
+								<div class="pdfProgram">
+									<a href="pdfs/programme.pdf"> Programme du congrès </a>
+								</div>
+								
+								<div class="menuProgramme">
+									<ul class="menuProgramme-nav">
+										
+										<li>
+										<a href="#wednesday" class="pageProgramme" onclick="openDay('mercredi')">
+											Mercredi 27
+										</a>
+										</li>
+										
+										<li>
+										<a href="#thursday" class="pageProgramme" onclick="openDay('jeudi')">
+											Jeudi 28
+										</a>
+										</li>
+										
+										<li>
+										<a href="#friday" class="pageProgramme" onclick="openDay('vendredi')">
+											Vendredi 29
+										</a>
+										</li>
+							
+									</ul>
+			
+								</div>
+							
+							</div>
+						
+							<div id="mercredi" class="day">
+							
+		
+								<h1 class="date">
+									<div class="conventionDate">
+										Mercredi 27 Mai 2026
+									</div>
+								</h1>
+								
+								<!-- On mobile, adjust the width of content within schedules -->
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										12h00
+									</h3>
+									
+									<div class="session">
+										
+										<div class="titreSujet">
+											<b>
+												Accueil
+											</b>
+										</div>
+						
+										<p class="details">
+											Foire aux outils éducatifs
+										</p>
+										
+										<p class="salle">
+											Salle 1.141
+										</p>
+									</div>
+								</div>
+
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										13h00 13h30
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Conférence Introductive
+											</b>
+										</div>
+						
+										<p class="intervenants">
+											Anna Baleige
+										</p>
+										
+										<p class="salle">
+											Amphithéâtre Gutemberg
+										</p>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										13h30 14h15
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Ouverture du Congrès
+											</b>
+										</div>
+						
+										<p class="intervenants">
+											Benoit Petre | Carole Planes | Aurore Margat | Cyril Crozet
+										</p>
+										
+										<p class="salle">
+											Amphithéâtre Gutemberg
+										</p>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										14h15 15h00
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Le Grand Quiz de la SETE
+											</b>
+										</div>
+						
+										<p class="sujet">
+											"Quand les savoirs se rencontrent: la richesse de l'ETP"
+										</p>
+										
+										<p class="salle">
+											Amphithéâtre Gutemberg
+										</p>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										15h00 15h30
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Pause
+											</b>
+										</div>
+										
+										<p class="salle">
+											Salle 1.141 & Couloir
+										</p>
+						
+										<div class="communicationsOrales">
+											<span class="orale">
+												<div>
+													<b>
+														Exposition
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Foire aux Outils Éducatifs
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Posters
+													</b>
+												</div>
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										15h30 16h45
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Sessions Parallèles
+											</b>
+										</div>
+						
+										<div class="sessionJumelles">					
+											<span class="jumeau">
+												<div>
+													<b>
+														Master Class
+													</b>
+												
+													<p class="sujet">
+														"Comment l'ETP transforme les savoirs pratiques de la Pharmacie et de la Médecine"
+													</p>
+													
+													<p class="intervenants">
+														Olivier Bourdon - Helen Bihan
+													</p>
+													
+													<p class="salle">
+														Amphithéâtre Gutemberg
+													</p>
+												</div>
+											</span>
+											
+											<span class="jumeau">
+												<b>	Communications orales </b>
+												
+												<div class="communicationsOrales">
+													<span class="orale">
+														<div>
+															<b>
+																Épistémologie des savoirs en ETP
+															</b>
+															
+															<p class="salle">
+																Salle 1.150
+															</p>
+															
+															<p class="intervenants">
+																David Authier | Nadine Lucidarme
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																Co-construction de programmes ETP
+															</b>
+															
+															<p class="salle">
+																Salle 1.147
+															</p>
+															
+															<p class="intervenants">
+																Philip Bohme | Sonia Tropé
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																Patient partenaire et pair-aidance
+															</b>
+															
+															<p class="salle">
+																Salle 1.156
+															</p>
+															
+															<p class="intervenants">
+																Agnès Certain | Benoît Saugeron
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600023
+															</b>
+															
+															<p class="intervenants">
+																Aurélie Gazagne
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600042
+															</b>
+															
+															<p class="intervenants">
+																Christelle Durand-Larrieux
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600097
+															</b>
+															
+															<p class="intervenants">
+																Andrea Limbourg
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600022
+															</b>
+															
+															<p class="intervenants">
+																Catherine Herdt
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600040
+															</b>
+															
+															<p class="intervenants">
+																Florence Somers
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000196
+															</b>
+															
+															<p class="intervenants">
+																Fanny Male
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000115
+															</b>
+															
+															<p class="intervenants">
+																Carla Drumond Campos
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600076
+															</b>
+															
+															<p class="intervenants">
+																Céline Yerly
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000100
+															</b>
+															
+															<p class="intervenants">
+																Mattéo Debiais
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000193
+															</b>
+															
+															<p class="intervenants">
+																Mehrnoosh Yazdanbakhsh
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE20260009
+															</b>
+															
+															<p class="intervenants">
+																Line Rochat | Aline Lassere-Moutet
+															</p>
+														</div>
+														
+														
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																
+															</b>
+														</div>
+													</span>
+												</div>
+												
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										16h45 17h15
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Pause
+											</b>
+										</div>
+										
+										<p class="salle">
+											Salle 1.141 & Couloir
+										</p>
+						
+										<div class="communicationsOrales">
+											<span class="orale">
+												<div>
+													<b>
+														Exposition
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Foire aux Outils Éducatifs
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Posters
+													</b>
+												</div>
+											</span>
+										</div>
+									
+									</div>
+								</div>
+
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										17h15 18h30
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Sessions Parallèles
+											</b>
+										</div>
+						
+										<div class="sessionJumelles">					
+											<span class="jumeau">
+												<div>
+													<b>
+														Place des doctorants
+													</b>
+												
+													<p class="sujet">
+														"Ma Thèse en ETP en 180 secondes"
+													</p>
+													
+													
+													<p class="salle">
+														Amphithéâtre Gutemberg
+													</p>
+												</div>
+											</span>
+											
+											<span class="jumeau">
+												<b>	Communications orales </b>
+												
+												<div class="communicationsOrales">
+													<span class="orale">
+														<div>
+															<b>
+																Formation des professionnels à l'ETP
+															</b>
+															
+															<p class="salle">
+																Salle 1.150
+															</p>
+															
+															<p class="intervenants">
+																Benoit Allenet | Marie-Sophie Cherillat
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP et maladies métaboliques 
+															</b>
+															
+															<p class="salle">
+																Salle 1.147
+															</p>
+															
+															<p class="intervenants">
+																Jean-David Cohen | Catherine Joly
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP numérique et e-ETP
+															</b>
+															
+															<p class="salle">
+																Salle 1.156
+															</p>
+															
+															<p class="intervenants">
+																Maria Grazia Albano | Carole Deccache
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600041
+															</b>
+															
+															<p class="intervenants">
+																Hélène Leflaive
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000189
+															</b>
+															
+															<p class="intervenants">
+																Helen Mosnier-Pudar
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600029
+															</b>
+															
+															<p class="intervenants">
+																Noelle Cardinaud
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000140
+															</b>
+															
+															<p class="intervenants">
+																Marie-Sophie Cherillat
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000198
+															</b>
+															
+															<p class="intervenants">
+																Isabelle Rodriguez-Perron
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000144
+															</b>
+															
+															<p class="intervenants">
+																Julie Plaisant
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000105
+															</b>
+															
+															<p class="intervenants">
+																Agnès Certain
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600035
+															</b>
+															
+															<p class="intervenants">
+																Léana Sayssac
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE202600049
+															</b>
+															
+															<p class="intervenants">
+																Claire Demiot
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE20260006
+															</b>
+															
+															<p class="intervenants">
+																Philip Böhme
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000162
+															</b>
+															
+															<p class="intervenants">
+																Sarah Kachibal | Muriel Priam
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE2026000147
+															</b>
+															
+															<p class="intervenants">
+																Hélène Leflaive
+															</p>Stéphanie Champion | Arly Communier
+														</div>
+													</span>
+												</div>
+												
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										19h00 20h30
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Hors programme
+											</b>
+										</div>
+										
+										<p>
+											AG de la SETE
+										</p>
+										
+										<p class="salle">
+											Amphithéâtre Gutemberg
+										</p>
+										
+									</div>
+								</div>
+		
+
+							</div>
+	
+							<div id="jeudi" class="day" style="display: none">
+							
+								<h1 class="date">
+									<div class="conventionDate">
+										Jeudi 28 Mai 2026
+									</div>
+								</h1>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										08h30
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Accueil
+											</b>
+										</div>
+										
+										<p class="salle">
+											Salle 1.141 & Couloir
+										</p>
+						
+										<div class="communicationsOrales">
+											<span class="orale">
+												<div>
+													<b>
+														Exposition
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Foire aux Outils Éducatifs
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Posters
+													</b>
+												</div>
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										9h00 10h15
+									</h3>
+									
+									<div class="session">
+									
+										<div class="titreSujet">
+											<b>
+												Sessions Parallèles
+											</b>
+										</div>
+									
+									<div class="sessionJumelles">
+									
+										<span class="jumeau">
+										
+										<div>
+											<b>
+												Rencontre Flash avec des Experts
+											</b>
+										</div>
+										<p class="salle">
+											Salle 1.150
+										</p>
+										
+										<div class="communicationsOrales">
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Pauline Carrara-Chauvin | Catherine Joly
+													</p>
+													
+													<h4>
+														 Retour d’expériences sur l’enseignement de l’ETP en partenariat avec des patients :
+														 <p>
+															Un éventail de possibilités
+														</p>
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Benoit Saugeron
+													</p>
+													
+													<h4>
+														Être coordinateur en ETP : 
+														<p>
+															Défis, tensions et leviers d’action
+														</p>
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Philip Böhme
+													</p>
+													
+													<h4>
+														 ETP et approche Responsabilité Populationnelle :
+														 <p>
+															Questionnement qui recouvre le lien ville-hôpital et celui de l’ETP « territoriale » et des soins primaires
+														</p>
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Lucie Cabrejo
+													</p>
+													
+													<h4>
+														ETP pour les soignants :
+														<p>
+															Comment l’ETP (ses thématiques transversales, ses outils, ses techniques d’animation, ses méthodes pédagogiques) sont profitables aussi directement pour la santé et les problématiques des professionnels de santé
+														</p>
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Aurelié Gazagne
+													</p>
+													
+													<h4>
+														Développement de programme en lien ville-hôpital
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Magali Salles
+													</p>
+													
+													<h4>
+														Partage d’expérience sur l’ETP auprès des enfants
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Marie-Sophie Cherillat | Jean-François d’Ivernois
+													</p>
+													
+													<h4>
+														 Publication scientifique :
+														<p>
+															Motiver les personnes à la publication de leurs travaux avec l’identification de ressources disponibles dans leur environnement
+														</p>
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Maria Grazia
+													</p>
+													
+													<h4>
+														 ETP en sortie d’hospitalisation (ETP sh)
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Anouk Betton
+													</p>
+													
+													<h4>
+														 Effet de halo
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Carole Deccache
+													</p>
+													
+													<h4>
+														 Compétences sociales VS facteurs psychosociaux : opérationnalisation et applications !
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Florence Somers
+													</p>
+													
+													<h4>
+														 Un partenariat en 3D pour innover en ETP :
+														 <p>
+															Croiser les expériences patients/professionnels de santé/soignants éducateurs
+														</p>
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														Josephine Thomas d'Hoste | Hubert Martin 
+													</p>
+													
+													<h4>
+														Comment sensibiliser les élus pour promouvoir la coordination de proximité de programmes adaptés à la population locale
+													</h4>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<p class="intervenants">
+														<p> Florence Bourguet | Emilie Pompignac | Sandra Capou (UTTEP19) </p>
+														<p> Agnès Certain (ResUTEP) </p>
+													</p>
+													
+													<h4>
+														De l’UTTEP à ResUTEP
+													</h4>
+												</div>
+											</span>
+										</div>
+										</span>
+										
+										<span class="jumeau">
+											<div>
+												<b>
+													Atelier d’expérimentation de la Rythmique Jaques-Dalcroze. Musique et danse, liens avec l’ETP
+												</b>
+												
+												<p class="salle">
+													Foyer des étudiants
+													<div class="disclaimer">
+														(places limitées)
+													</div>
+												</p>
+												
+												<p class="intervenants">
+													Anne-Marix Chatoux | Frédéric Sittarame
+												</p>
+											</div>
+										</span>
+									
+									</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										10h15 10h45
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Pause
+											</b>
+										</div>
+										
+										<p class="salle">
+											Salle 1.141 & Couloir
+										</p>
+						
+										<div class="communicationsOrales">
+											<span class="orale">
+												<div>
+													<b>
+														Exposition
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Foire aux Outils Éducatifs
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Posters
+													</b>
+												</div>
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										10h45 12h00
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Sessions Parallèles
+											</b>
+										</div>
+						
+										<div class="sessionJumelles">					
+											<span class="jumeau">
+												<div>
+													<b>
+														Rencontre
+													</b>
+												
+													<p class="sujet">
+														"Approches expérientielles en santé" et sur le passage "De la reconnaissance des savoirs expérientiels des personnes concernées par des troubles de santé à la prise en considération de leur réflexivité" et les recherches en cours au sein de la communauté informelle de recherche CoReS (Coopérations réflexives en Santé, http://cores.hypotheses.or)
+													</p>
+													<!-- Associated Link is Not Functional -->
+													
+													<p class="intervenants">
+														Olivier Las Vergnas
+													</p>
+													
+													<p class="salle">
+														Amphithéâtre Gutemberg
+													</p>
+												</div>
+											</span>
+											
+											<span class="jumeau">
+												<b>	Communications orales </b>
+												
+												<div class="communicationsOrales">
+													<span class="orale">
+														<div>
+															<b>
+																ETP en santé mentale
+															</b>
+															
+															<p class="salle">
+																Salle 1.150
+															</p>
+															
+															<p class="intervenants">
+																Anne-Catherine Dubois | Agnès Certain
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP pédiatrique
+															</b>
+															
+															<p class="salle">
+																Salle 1.147
+															</p>
+															
+															<p class="intervenants">
+																 David Authier | Marie-Sophie Cherillat
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																 Littératie en santé
+															</b>
+															
+															<p class="salle">
+																Salle 1.156
+															</p>
+															
+															<p class="intervenants">
+																Aurélie Gazagne | Jean-David Cohen
+															</p>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+												</div>
+												
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										12h05 12h30
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Posters Tours
+											</b>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										12h30 14h30
+									</h3>
+									
+									<div class="session">
+										<div class="sessionJumelles">					
+											<span class="jumeau">
+												<div class="titreSujet">
+													<b>
+														Pause Déjeuner
+													</b>
+												</div>
+											</span>
+											
+											<span class="jumeau">
+												<div class="uniqueSchedule">
+												
+													<div class="schedule">
+													<h3 class="horaires">
+														12h30 13h30
+													</h3>
+													
+													<div class="session">
+														<div class="titreSujet">
+															<b>
+																Conférence de presse
+															</b>
+															
+															<b class="disclaimer">
+																Réservé à la presse
+															</b>
+														</div>
+													</div>
+													</div>
+													
+													<div class="schedule">
+													<h3 class="horaires">
+														13h30 14h30
+													</h3>
+													
+														<div class="session">
+														
+															<div class="titreSujet">
+																<b>
+																	Symposia au choix
+																</b>
+															</div>
+															
+															
+															
+															<div class="sessionQuadruple">					
+																<span class="quadruple">
+																	<div>
+																		<b>
+																			Symposium 1
+																		</b>
+																	</div>
+																</span>
+											
+																<span class="quadruple">
+																	<div>
+																		<b>
+																			Symposium 2
+																		</b>
+																	</div>
+																</span>
+																
+																<span class="quadruple">
+																	<div>
+																		<b>
+																			Symposium 3
+																		</b>
+																	</div>
+																</span>
+																
+																<span class="quadruple">
+																	<div>
+																		<b>
+																			La SETE invite
+																		</b>
+																	</div>
+																</span>
+															</div>
+															
+														
+															<!-- <table>
+															
+																<tr>
+																	<th>
+																		Symposium 1
+																	</th>
+																	
+																	<th>
+																		Symposium 2
+																	</th>
+																	
+																	<th>
+																		Symposium 3
+																	</th>
+																	
+																	<th>
+																		La SETE invite
+																	</th>
+																</tr>
+																
+															
+															</table> -->
+														
+														</div>
+														
+													</div>
+												
+												</div>
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										14h35 15h50
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Sessions Parallèles
+											</b>
+										</div>
+						
+										<div class="sessionJumelles">					
+											<span class="jumeau">
+												<div>
+													<b>
+														Master Class
+													</b>
+												
+													<p class="sujet">
+														"Sciences infirmières et savoir"
+													</p>
+													
+													<p class="intervenants">
+														Sebastien Colson
+													</p>
+													
+													<p class="salle">
+														Amphithéâtre Gutemberg
+													</p>
+												</div>
+											</span>
+											
+											<span class="jumeau">
+												<b>	Communications orales </b>
+												
+												<!--<div class="sessionTriple">
+													<span class="triple">Expositions</span>
+													<span class="triple">Foires aux Outils Éducatifs</span>
+													<span class="triple">Posters</span>
+												</div>-->
+												
+												<!-- <table>
+													<tr>
+														<th>
+															ETP
+														</th>
+														
+														<th>
+															ETP
+														</th>
+														
+														<th>
+															ETP
+														</th>
+													</tr>
+													
+													<tr>
+														<td>
+															SETE
+														</td>
+														
+														<td>
+															SETE
+														</td>
+														
+														<td>
+															SETE
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
+															SETE
+														</td>
+														
+														<td>
+															SETE
+														</td>
+														
+														<td>
+															SETE
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
+															SETE
+														</td>
+														
+														<td>
+															SETE
+														</td>
+														
+														<td>
+															SETE
+														</td>
+													</tr>
+													
+													<tr>
+														<td>
+															SETE
+														</td>
+														
+														<td>
+															SETE
+														</td>
+														
+														<td>
+															SETE
+														</td>
+													</tr>
+												</table> -->
+												
+												<div class="communicationsOrales">
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+												</div>
+												
+												
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										15h50 16h20
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Pause
+											</b>
+										</div>
+						
+										<div class="communicationsOrales">
+											<span class="orale">
+												<div>
+													<b>
+														Exposition
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Foire aux Outils Éducatifs
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Posters
+													</b>
+												</div>
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										16h20 17h35
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Sessions Parallèles
+											</b>
+										</div>
+						
+										<div class="sessionJumelles">					
+											<span class="jumeau">
+												<div>
+													<b>
+														Master Class
+													</b>
+												
+													<p class="sujet">
+														"L'expérience des patients: un levier pour transformer les pratiques professionnelles"
+													</p>
+													
+													<p class="intervenants">
+														Tomaso Antonacci
+													</p>
+													
+													<p class="salle">
+														Amphithéâtre Gutemberg
+													</p>
+												</div>
+											</span>
+											
+											<span class="jumeau">
+												<b>	Communications orales </b>
+												
+												<div class="communicationsOrales">
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																
+															</b>
+														</div>
+													</span>
+												</div>
+												
+											</span>
+										</div>
+									</div>
+								</div>
+							
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										17h50 19h20
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Représentation Théâtrla et Débat
+											</b>
+										</div>
+										
+										<p class="intervenants">
+											avec "Nightingale, la dame à la crête de coq" par la compagnie Terraquée
+										</p>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										19h30
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Hors Programme
+											</b>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							
+							<div id="vendredi" class="day" style="display: none">
+							
+							
+							
+								<h1 class="date">
+									<div class="conventionDate">
+										Vendredi 29 Mai 2026
+									</div>
+								</h1>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										08h30
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Accueil
+											</b>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										09h00 10h10
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Propositions et Échanges: Controverse de la SETE
+											</b>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										16h20 17h35
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Sessions Parallèles
+											</b>
+										</div>
+						
+										<div class="sessionJumelles">					
+											<span class="jumeau">
+												<div>
+													<b>
+														Atelier: L'ETP de Demain
+													</b>
+												</div>
+											</span>
+											
+											<span class="jumeau">
+												<b>	Communications orales </b>
+												
+												<div class="communicationsOrales">
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																ETP
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																SETE
+															</b>
+														</div>
+													</span>
+													
+													<span class="orale">
+														<div>
+															<b>
+																
+															</b>
+														</div>
+													</span>
+												</div>
+												
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										11h30 11h45
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Pause
+											</b>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										11h45 12h45
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Remise des Prix SETE
+											</b>
+										</div>
+						
+										<div class="communicationsOrales">
+											<span class="orale">
+												<div>
+													<b>
+														Conférence de Clôture
+													</b>
+													
+													<p class="intervenants">
+														Olivia Gross
+													</p>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Restitution du Micro-Trottoir
+													</b>
+												</div>
+											</span>
+											
+											<span class="orale">
+												<div>
+													<b>
+														Remise des Prix SETE
+													</b>
+													
+													<div class="communicationsOrales">
+													
+														<span class="orale">
+															<div>
+																Communication Orale
+															</div>
+														</span>
+														
+														<span class="orale">
+															<div>
+																Poster
+															</div>	
+														</span>
+														
+														<span class="orale">
+															<div>
+																Coup de Cœur
+															</div>
+														</span>
+														
+														<span class="orale">
+															<div>
+																Outils Éducatif
+															</div>
+														</span>
+														
+														<span class="orale">
+															<div>
+																Publication ETP-TPE
+															</div>
+														</span>
+														
+														<span class="orale">
+															<div>
+																Thèse en ETP en 180 secondes
+															</div>
+														</span>
+														
+													</div>
+												</div>
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="schedule">
+								
+									<h3 class="horaires">
+										13h00
+									</h3>
+									
+									<div class="session">
+										<div class="titreSujet">
+											<b>
+												Clôture du Congrès
+											</b>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+	
+						</div>
+				
+					</div>
+				</div>
+			</div>
+		
+			<div class="footerOutter">
+				<footer class="footer">
+					<div class="footerInner">
+				
+						<p>
+						
+						</p>
+				
+				
+					</div>
+				</footer>
+			</div>
+	
+		</div>
+	
+	
+	<script>
+function openTab(seteTab) {
+	var i;
+	var x = document.getElementsByClassName("tab");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";}
+	document.getElementById(seteTab).style.display = "block";
+}
+
+	</script>
+	
+	<script>
+function openTabMobile() {
+  var i;
+  var x = document.getElementById("mobileTabs");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+	</script>
+	
+	<script>
+function openDay(dayName) {
+	var i;
+	var x = document.getElementsByClassName("day");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";}
+	document.getElementById(dayName).style.display = "block";
+}
+	</script>
+	
+	</body>
+	
+</html>
